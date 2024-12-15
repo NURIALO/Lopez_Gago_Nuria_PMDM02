@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+        ConstraintLayout: Contenedor principal que permite crear una interfaz flexible y ajustable,
+        utilizando restricciones para alinear los elementos de forma eficiente.
+        Propiedades:
+        - `android:layout_width` y `android:layout_height`: Ajustan el tamaño del `ConstraintLayout` al tamaño completo de la pantalla.
+    -->
+
+    <!-- RecyclerView: Muestra una lista de elementos desplazables -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/character_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:background="@color/celeste" />
+
+    <!--
+        RecyclerView: Un componente utilizado para mostrar una lista de elementos que se pueden desplazar verticalmente.
+        Propiedades:
+        - `android:id`: Asigna un identificador único al `RecyclerView` para poder referenciarlo desde el código.
+        - `android:layout_width`: Ajusta el ancho del `RecyclerView` al 100% del contenedor.
+        - `android:layout_height`: Ajusta la altura del `RecyclerView` al 100% del contenedor.
+        - `android:layout_margin`: Añade un margen de 8dp alrededor del `RecyclerView` para separar los bordes de la pantalla.
+        - `android:background`: Establece el color de fondo del `RecyclerView` utilizando un color definido en los recursos como `@color/primary_end`.
+    -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

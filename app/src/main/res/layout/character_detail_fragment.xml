@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CharacterDetailFragment">
+
+    <!--
+        LinearLayout: Contenedor principal que organiza los elementos de manera vertical.
+        Propiedades:
+        - `android:layout_width` y `android:layout_height`: Ajustan el tamaño del LinearLayout.
+        - `android:orientation`: Establece la disposición vertical de los elementos dentro del contenedor.
+        - `android:padding`: Añade un espacio interno de 16dp alrededor de los elementos.
+        - `tools:context`: Establece el contexto para la vista en el fragmento correspondiente.
+    -->
+
+    <!-- Imagen del personaje -->
+    <ImageView
+        android:id="@+id/image_character_detail"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/cardview_gradient_background"
+        android:scaleType="fitCenter"/>
+
+    <!--
+        ImageView: Muestra la imagen del personaje.
+        Propiedades:
+        - `android:layout_width` y `android:layout_height`: Define el tamaño de la imagen.
+        - `android:layout_marginBottom`: Añade un margen de 16dp en la parte inferior para separarla del siguiente elemento.
+        - `android:scaleType`: Ajusta la escala de la imagen para que se mantenga dentro del área disponible sin distorsionarse (`centerInside`).
+        - `android:background`: Aplica un fondo degradado definido en el recurso `cardview_gradient_background`.
+    -->
+
+    <!-- Nombre del personaje -->
+    <TextView
+        android:id="@+id/name_text_detail"
+        style="@style/TextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/characterName"
+        android:textStyle="bold" />
+
+    <!--
+        TextView: Muestra el nombre del personaje.
+        Propiedades:
+        - `android:layout_width` y `android:layout_height`: Ajusta el tamaño de la vista del texto.
+        - `android:layout_marginBottom`: Añade un margen de 16dp en la parte inferior.
+        - `android:textStyle`: Aplica estilo de texto en negrita para destacar el nombre.
+        - `android:text`: Establece el texto usando un recurso de cadena (`@string/characterName`).
+        - `style`: Aplica un estilo personalizado definido en `TextViewStyle`.
+    -->
+
+    <!-- Descripción del personaje -->
+    <TextView
+        android:id="@+id/description_text_detail"
+        style="@style/TextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/characterDescription" />
+
+    <!--
+        TextView: Muestra la descripción del personaje.
+        Propiedades:
+        - `android:layout_width` y `android:layout_height`: Ajusta el tamaño de la vista del texto.
+        - `android:layout_marginBottom`: Añade un margen de 16dp en la parte inferior.
+        - `android:text`: Establece el texto usando un recurso de cadena (`@string/characterDescription`).
+        - `style`: Aplica un estilo personalizado definido en `TextViewStyle`.
+    -->
+
+    <!-- Habilidades del personaje -->
+    <TextView
+        android:id="@+id/abilities_text_detail"
+        style="@style/TextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/characterAbilities" />
+
+    <!--
+        TextView: Muestra las habilidades del personaje.
+        Propiedades:
+        - `android:layout_width` y `android:layout_height`: Ajusta el tamaño de la vista del texto.
+        - `android:layout_marginBottom`: Añade un margen de 16dp en la parte inferior.
+        - `android:text`: Establece el texto usando un recurso de cadena (`@string/characterAbilities`).
+        - `style`: Aplica un estilo personalizado definido en `TextViewStyle`.
+    -->
+
+</LinearLayout>

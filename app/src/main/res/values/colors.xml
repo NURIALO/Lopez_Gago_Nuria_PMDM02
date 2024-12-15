@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="celeste">#85D1F4</color>
+    <color name="verde">#4de32a</color>
+    <color name="azulMarino">#0E3597</color>
+    <color name="rosaClaro">#F2C3E9</color>
+    <color name="amarillo">#F6E234</color>
+    <color name="gray_light">#19E0B2</color>
+    <color name="teal_700">#F0D734</color>
+    <color name="primary_end">#2575FC</color>
+    <color name="rosa">#DA0CFA</color>
+    <color name="naranja">#FF5722</color>
+
+</resources>

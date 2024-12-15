@@ -1,0 +1,38 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/characterListFragment">
+    <!-- Fragmento con la lista de personajes -->
+    <fragment
+        android:id="@+id/characterListFragment"
+        android:name="com.lopezgagonuria_pmdm.tarea2_supermario.CharacterListFragment"
+        android:label="@string/characterList"
+        tools:layout="@layout/recyclerview_fragment">
+
+        <!-- Acción que conecta este fragmento con el fragmento de detalles del personaje -->
+        <action
+            android:id="@+id/action_characterListFragment_to_characterDetailFragment"
+            app:destination="@id/characterDetailFragment" />
+    </fragment>
+
+    <!-- Fragmento de detalles del personaje -->
+    <fragment
+        android:id="@+id/characterDetailFragment"
+        android:name="com.lopezgagonuria_pmdm.tarea2_supermario.CharacterDetailFragment"
+        android:label="@string/characterDetails"
+        tools:layout="@layout/character_detail_fragment" />
+
+    <!-- Fragmento para la opción "Acerca de..." -->
+    <fragment
+        android:id="@+id/option_language_switch"
+        android:name="com.lopezgagonuria_pmdm.tarea2_supermario.OptionLanguageSwitchFragment"
+        android:label="Acerca de..."
+        tools:layout="@layout/option_language_switch">
+
+        <!-- Acción que conecta este fragmento con el fragmento principal de la lista de personajes -->
+        <action
+            android:id="@+id/action_switchFragment_to_mainFragment"
+            app:destination="@id/characterListFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/primary_end">
+
+    <!--
+        LinearLayout: Contenedor principal que organiza los elementos de manera vertical.
+        Propiedades:
+        - `android:layout_width` y `android:layout_height`: Ajustan el tamaño del LinearLayout.
+        - `android:orientation`: Define que los elementos dentro del contenedor estarán organizados en una columna (orientación vertical).
+        - `android:padding`: Añade un espacio interno de 16dp alrededor de los elementos.
+        - `android:background`: Establece un color de fondo definido en `@color/primary_end`.
+    -->
+
+    <!-- Imagen del personaje -->
+    <ImageView
+        android:id="@+id/character_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/aboutDeveloper"
+        android:src="@drawable/mario"
+        android:background="@drawable/cardview_gradient_background"/>
+
+    <!--
+        ImageView: Muestra la imagen del personaje.
+        Propiedades:
+        - `android:layout_width` y `android:layout_height`: Ajusta el tamaño de la imagen según el contenido de la imagen fuente.
+        - `android:layout_gravity`: Centra la imagen dentro del `LinearLayout`.
+        - `android:contentDescription`: Proporciona una descripción accesible para la imagen (útil para la accesibilidad).
+        - `android:src`: Establece la imagen que se mostrará, en este caso, la imagen `mario`.
+        - `android:background`: Aplica un fondo personalizado definido en `cardview_gradient_background` para darle un efecto visual.
+    -->
+
+    <!-- Texto de descripción -->
+    <TextView
+        android:id="@+id/dialog_text"
+        style="@style/TextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/alertDialog"
+        android:background="@color/primary_end"
+        />
+
+    <!--
+        TextView: Muestra un texto de descripción o mensaje dentro del contenedor.
+        Propiedades:
+        - `style`: Aplica un estilo personalizado definido en `TextViewStyle` (probablemente para ajustar tamaño, color, y estilo del texto).
+        - `android:layout_width` y `android:layout_height`: Ajustan el tamaño de la vista del texto, siendo `match_parent` para el ancho y `wrap_content` para la altura, lo que permite que el texto se ajuste automáticamente.
+        - `android:layout_marginTop`: Añade un margen superior de 16dp para separar el texto de la imagen.
+        - `android:text`: Define el texto que se mostrará, tomando el valor de un recurso de cadena `@string/alertDialog`.
+        - `android:background`: Aplica un color de fondo de acuerdo con `@color/primary_end`.
+    -->
+
+</LinearLayout>

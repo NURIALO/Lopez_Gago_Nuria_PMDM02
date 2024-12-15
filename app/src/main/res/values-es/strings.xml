@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AppName">SUPER MARIO BROS</string>
+    <string name="toastText">"Ha elegido al personaje "</string>
+    <string name="SnackBarText">Bienvenidos al mundo de Mario!!!!</string>
+    <string name="about">Acerca de...</string>
+    <string name="alertDialog">\"Aplicación desarrollada por Nuria López Gago. Versión 1.0."</string>
+    <string name="menuPage">MENU</string>
+    <string name="optionLanguaje">Escoge idioma</string>
+    <string name="backButtonSwitch">Volver al inicio</string>
+    <string name="home">Inicio</string>
+    <string name="settings">Ajustes</string>
+
+
+    <string name="MarioDescription">Descripción: Héroe del Reino Champiñón</string>
+    <string name="MarioAbilities">Habilidades: Salta alto, Héroe del Reino Champiñón</string>
+
+    <string name="LuigiDescription">Descripción: Hermano de Mario</string>
+    <string name="LuigiAbilities">Habilidades: Más alto que Mario, pero un poco miedoso</string>
+
+    <string name="PeachDescription">Descripción: Princesa del Reino Champiñón</string>
+    <string name="PeachAbilities">Habilidades: Inteligente y valiente, rescatada por Mario</string>
+
+    <string name="ToadDescription">Descripción: Leal sirviente de la princesa Peach</string>
+    <string name="ToadAbilities">Habilidades: Ágil, pequeño pero rápido</string>
+
+    <string name="BowserDesciption">Descripción: Rey de los Koopas y enemigo de Mario</string>
+    <string name="BowserAbilities">Habilidades: Lanza fuego, fuerza sobrehumana</string>
+
+    <string name="PakkunDescription">Habitante del Reino Champiñón, fiel amigo y veloz ayudante.</string>
+    <string name="PakkunAbilities">Habilidades: Da mordiscos rápidos y escupe fuego.</string>
+
+    <string name="YoshiDescription">Descripción: Dinosaurio amigable y montura de Mario</string>
+    <string name="YoshiAbilities">\"Habilidades: Come enemigos, lanza huevos\"</string>
+
+    <string name="KoopaDescription">Descripción: Tortuga que trabaja para Bowser</string>
+    <string name="KoopaAbilities">\"Habilidades: Resistente, vuelve a la batalla tras ser derrotado\"</string>
+
+    <string name="characterDescription">Descripción del personaje</string>
+    <string name="characterName">Nombre del personaje</string>
+    <string name="characterAbilities">Habilidades del personaje</string>
+    <string name="characterDetails">DETALLES DEL PERSONAJE</string>
+    <string name="characterList">LISTA DE PERSONAJES</string>
+    <string name="languajeChange">Idioma cambiado a español</string>
+    <string name="aboutDeveloper">Acerca de…</string>
+    <string name="languageOptions">OPCIONES DE IDIOMA</string>
+
+    <string name="navigation_drawer_open">Abrir menú</string>
+    <string name="navigation_drawer_close">Cerrar menú</string>
+</resources>

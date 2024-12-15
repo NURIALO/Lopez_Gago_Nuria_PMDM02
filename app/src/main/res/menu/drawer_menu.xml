@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Ítem de menú para la página de inicio -->
+    <item
+        android:id="@+id/nav_home_menu"
+        android:title="@string/home"
+        android:titleTextStyle="@style/MenuTextStyle"/>
+
+    <!-- Ítem de menú para la configuración (comentado el ícono para este ítem) -->
+    <item
+        android:id="@+id/nav_settings_menu"
+        android:title="@string/settings"
+        android:titleTextStyle="@style/MenuTextStyle"
+        />
+
+</menu>

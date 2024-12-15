@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@drawable/recyclerview_divider">
+
+    <!--
+        CardView: Contenedor que permite mostrar información en una tarjeta con sombra y bordes redondeados.
+        Propiedades:
+        - `style`: Aplica un estilo personalizado definido en `styles.xml`.
+        - `android:layout_width` y `android:layout_height`: Determinan el tamaño del CardView.
+        - `android:divider`: Divide visualmente los elementos en un RecyclerView (si se usa).
+    -->
+
+    <!-- ConstraintLayout: Controla la disposición de los elementos dentro de la tarjeta -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardview_gradient_background"
+        android:padding="16dp">
+
+        <!--
+            ConstraintLayout: Ofrece un sistema flexible para posicionar elementos.
+            Propiedades:
+            - `android:background`: Aplica un fondo degradado definido en `cardview_gradient_background`.
+            - `android:padding`: Añade espacio interno alrededor de los elementos.
+        -->
+
+        <!-- Imagen a la izquierda -->
+        <ImageView
+            android:id="@+id/image_cardview"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/mario"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--
+            ImageView: Muestra la imagen del personaje en la tarjeta.
+            Propiedades:
+            - `android:src`: Define la imagen inicial desde los recursos (`mario`).
+            - `app:layout_constraint...`: Posiciona la imagen centrada verticalmente y alineada a la izquierda.
+        -->
+
+        <!-- Texto centrado en la tarjeta -->
+        <TextView
+            android:id="@+id/text_Cardview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/azulMarino"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--
+            TextView: Muestra el nombre o información del personaje.
+            Propiedades:
+            - `android:textColor`: Color del texto definido como `@color/azulMarino`.
+            - `android:textSize`: Tamaño del texto definido en `24sp`.
+            - `android:textStyle`: Aplica negrita al texto.
+            - `app:layout_constraint...`: Centra el texto absoluta y verticalmente en la tarjeta.
+        -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

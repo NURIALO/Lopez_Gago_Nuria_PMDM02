@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/primary_end">
+
+    <!--
+        LinearLayout: Contenedor principal que organiza los elementos en una columna (vertical).
+        Propiedades:
+        - `android:layout_width`: Ajusta el tamaño del `LinearLayout` al ancho disponible.
+        - `android:layout_height`: Ajusta el alto al contenido de los elementos, lo que permite que el contenedor se expanda según su contenido.
+        - `android:orientation`: Define que los elementos dentro del contenedor estarán organizados de manera vertical (en una columna).
+        - `android:padding`: Añade un espacio interno de 16dp alrededor de los elementos, proporcionando un margen entre el borde del `LinearLayout` y su contenido.
+        - `android:background`: Establece el color de fondo usando un recurso de color definido como `@color/primary_end`.
+    -->
+
+    <!-- Imagen en la parte superior -->
+    <ImageView
+        android:id="@+id/header_image"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/splashlogo2" />
+
+    <!--
+        ImageView: Muestra una imagen, en este caso, `splashlogo2` en la parte superior del diseño.
+        Propiedades:
+        - `android:layout_width` y `android:layout_height`: Ajustan el tamaño de la imagen. En este caso, el ancho se ajusta al contenido y el alto se fija a 150dp.
+        - `android:layout_gravity`: Centra la imagen dentro del `LinearLayout`.
+        - `android:clickable` y `android:focusable`: Hacen que la imagen sea interactiva (se puede hacer clic y enfocarla).
+        - `android:src`: Establece la imagen a mostrar desde los recursos (`splashlogo2`).
+    -->
+
+    <!-- Título principal -->
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menuPage"
+        android:textColor="@color/amarillo"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        style="@style/TextViewStyle"/>
+
+    <!--
+        TextView: Muestra el título principal de la página, definido como `@string/menuPage`.
+        Propiedades:
+        - `android:layout_width` y `android:layout_height`: Ajustan el tamaño de la vista de texto, siendo el ancho ajustable al contenido y la altura al contenido también.
+        - `android:text`: Define el texto a mostrar, tomándolo de un recurso de cadena `@string/menuPage`.
+        - `android:textColor`: Establece el color del texto usando un color definido como `@color/amarillo`.
+        - `android:layout_marginTop`: Añade un margen superior de 8dp, separando el texto de la imagen.
+        - `android:layout_gravity`: Centra el texto dentro del contenedor.
+        - `android:layout_marginBottom`: Añade un margen inferior de 30dp para separar el texto de los elementos siguientes.
+        - `style`: Aplica un estilo personalizado definido en `@style/TextViewStyle`, probablemente para ajustar tamaño, tipo de fuente y otros estilos del texto.
+    -->
+
+    <!-- Subtítulo debajo del título -->
+    <TextView
+        android:id="@+id/header_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_light"
+        android:layout_gravity="center"
+        style="@style/TextViewStyle"/>
+
+    <!--
+        TextView: Muestra un subtítulo con texto adicional o aclaratorio.
+        Propiedades:
+        - `android:layout_width` y `android:layout_height`: Ajustan el tamaño de la vista de texto, con el ancho ajustable al contenido y la altura al contenido.
+        - `android:textColor`: Establece el color del texto usando un color definido como `@color/gray_light`.
+        - `android:layout_gravity`: Centra el subtítulo dentro del `LinearLayout`.
+        - `style`: Aplica el estilo definido en `@style/TextViewStyle` para mantener la consistencia visual con el resto de los textos.
+    -->
+
+</LinearLayout>

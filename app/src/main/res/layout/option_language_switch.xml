@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_end"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!--
+        LinearLayout: Contenedor principal que organiza los elementos en una columna (vertical).
+        Propiedades:
+        - `android:layout_width` y `android:layout_height`: Ajustan el tamaño del `LinearLayout` al tamaño completo de la pantalla (ancho completo y alto completo).
+        - `android:background`: Establece el color de fondo utilizando un recurso de color definido como `@color/primary_end`.
+        - `android:gravity`: Define que el contenido se alineará en la parte superior y centrado horizontalmente dentro del `LinearLayout`.
+        - `android:orientation`: Define que los elementos dentro del contenedor estarán organizados en una orientación vertical.
+        - `android:padding`: Añade un espacio de 16dp entre los bordes del `LinearLayout` y sus elementos internos.
+    -->
+
+    <!-- Imagen en la parte superior -->
+    <ImageView
+        android:id="@+id/top_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/idiomas" /> <!-- Imagen ocupa parte del espacio disponible -->
+
+    <!--
+        ImageView: Muestra una imagen ubicada en la parte superior del diseño.
+        Propiedades:
+        - `android:layout_width`: Ajusta el ancho de la imagen al 100% del contenedor.
+        - `android:layout_height`: La altura está configurada como `0dp`, lo que significa que su altura estará determinada por el peso en la siguiente propiedad.
+        - `android:layout_weight`: Asigna un peso de `1`, lo que hace que la imagen ocupe el 1/3 del espacio disponible dentro del contenedor.
+        - `android:src`: Establece la imagen a mostrar desde los recursos (`@drawable/idiomas`).
+    -->
+
+    <!-- Título para el cambio de idioma -->
+    <TextView
+        style="@style/TextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/optionLanguaje"
+        android:textAlignment="center" />
+
+    <!--
+        TextView: Muestra un título que indica que el usuario puede cambiar el idioma.
+        Propiedades:
+        - `android:layout_width`: Ajusta el ancho de la vista de texto al 100% del contenedor.
+        - `android:layout_height`: La altura se ajusta automáticamente al contenido de texto.
+        - `android:text`: Define el texto a mostrar, tomado de un recurso de cadena `@string/optionLanguaje`.
+        - `android:textAlignment`: Centra el texto horizontalmente.
+        - `android:layout_marginBottom`: Añade un margen inferior de 16dp para separar el título de los siguientes elementos.
+        - `style`: Aplica un estilo personalizado a este `TextView` desde `@style/TextViewStyle`.
+    -->
+
+    <!-- Contenedor para el Switch y los textos (Inglés y Español) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <!-- Texto a la izquierda (Inglés) -->
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Inglés"
+            android:textSize="16sp" />
+
+        <!--
+            TextView: Muestra el texto "Inglés", que está ubicado a la izquierda del `Switch`.
+            Propiedades:
+            - `android:layout_width`: Ajusta el ancho de la vista de texto al contenido.
+            - `android:layout_height`: Ajusta la altura al contenido de texto.
+            - `android:layout_marginEnd`: Añade un margen de 8dp a la derecha del texto para separarlo del `Switch`.
+            - `android:text`: Establece el texto a mostrar como "Inglés".
+            - `android:textSize`: Define el tamaño de la fuente como 16sp.
+        -->
+
+        <!-- Switch para cambiar el idioma -->
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/option_language_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <!--
+            SwitchCompat: Muestra un `Switch` que permite al usuario cambiar entre inglés y español.
+            Propiedades:
+            - `android:id`: Establece un identificador único para el `Switch` que será utilizado para manejar el cambio de estado.
+            - `android:layout_width` y `android:layout_height`: Ajustan el tamaño del `Switch` según su contenido.
+            - `android:layout_gravity`: Centra el `Switch` horizontalmente dentro del contenedor.
+        -->
+
+        <!-- Texto a la derecha (Español) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Español"
+            android:textSize="16sp" />
+
+        <!--
+            TextView: Muestra el texto "Español", que está ubicado a la derecha del `Switch`.
+            Propiedades:
+            - `android:layout_width`: Ajusta el ancho de la vista de texto al contenido.
+            - `android:layout_height`: Ajusta la altura al contenido de texto.
+            - `android:layout_marginStart`: Añade un margen de 8dp a la izquierda del texto para separarlo del `Switch`.
+            - `android:text`: Establece el texto a mostrar como "Español".
+            - `android:textSize`: Define el tamaño de la fuente como 16sp.
+        -->
+
+    </LinearLayout>
+
+    <!-- Botón para volver -->
+    <Button
+        android:id="@+id/btn_back_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/backButtonSwitch"
+        android:textColor="@color/azulMarino" />
+
+    <!--
+        Button: Muestra un botón para volver a la pantalla anterior o realizar alguna acción.
+        Propiedades:
+        - `android:id`: Establece un identificador único para el botón, que se puede utilizar para manejar eventos.
+        - `android:layout_width` y `android:layout_height`: Ajustan el tamaño del botón según el contenido.
+        - `android:layout_marginTop`: Añade un margen superior de 8dp para separar el botón de los elementos anteriores.
+        - `android:layout_marginBottom`: Añade un margen inferior de 48dp para separarlo de la parte inferior del contenedor.
+        - `android:background`: Establece un fondo redondeado para el botón, usando un recurso `@drawable/rounded_button`.
+        - `android:text`: Define el texto a mostrar en el botón, tomado de un recurso de cadena `@string/backButtonSwitch`.
+        - `android:textColor`: Establece el color del texto en el botón utilizando un color definido como `@color/azulMarino`.
+    -->
+
+</LinearLayout>

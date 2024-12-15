@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_end">
+
+    <!--
+        DrawerLayout: Contenedor principal que permite el uso de un menú lateral (Navigation Drawer)
+        y un contenido principal. Es el elemento raíz del diseño.
+    -->
+
+    <!-- Contenido Principal -->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--
+            CoordinatorLayout: Contenedor para manejar comportamientos interactivos
+            entre vistas (como desplazamiento sincronizado entre AppBar y el contenido).
+        -->
+
+        <!-- AppBar con Toolbar -->
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ToolbarStyle">
+
+            <!--
+                AppBarLayout: Contenedor para manejar la barra de herramientas (Toolbar)
+                y otros elementos de encabezado que pueden desplazarse o mantenerse fijos.
+            -->
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/ToolbarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@color/azulMarino" />
+
+            <!--
+                Toolbar: Barra de herramientas que actúa como ActionBar de la aplicación.
+                Se utiliza para mostrar títulos, íconos, y botones como el de navegación lateral.
+                Propiedades:
+                - `style`: Aplica un estilo personalizado definido en `styles.xml`.
+                - `android:background`: Color de fondo definido en el recurso `@color/azulMarino`.
+            -->
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!-- FragmentContainerView para la navegación -->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:navGraph="@navigation/nav_graph" />
+
+        <!--
+            FragmentContainerView: Contenedor para alojar fragmentos de navegación.
+            Propiedades:
+            - `app:defaultNavHost`: Designa este contenedor como el anfitrión principal de navegación.
+            - `app:navGraph`: Especifica el archivo de gráfico de navegación utilizado por la aplicación.
+            - `app:layout_behavior`: Sincroniza el desplazamiento del contenido con el AppBar.
+        -->
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <!-- Menú Lateral (Navigation Drawer) -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header_navigation"
+        app:menu="@menu/drawer_menu" />
+
+    <!--
+        NavigationView: Panel de navegación lateral que se desliza desde el borde izquierdo.
+        Propiedades:
+        - `android:layout_gravity`: Define el borde desde el que se desliza el menú (en este caso, `start`).
+        - `app:headerLayout`: Especifica un diseño personalizado para la cabecera del menú (definido en `header_navigation.xml`).
+        - `app:menu`: Especifica el archivo XML del menú que define las opciones de navegación (definido en `drawer_menu.xml`).
+    -->
+</androidx.drawerlayout.widget.DrawerLayout>

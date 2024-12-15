@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Estilo para CardView -->
+    <style name="CardViewStyle" parent="AppTheme">
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">6dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <!-- Estilo para todos los TextViews -->
+    <style name="TextViewStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/amarillo</item> <!-- Color de texto negro -->
+        <item name="android:textSize">19sp</item> <!-- Tamaño de texto mediano -->
+        <item name="android:lineSpacingExtra">2dp</item> <!-- Espaciado entre líneas -->
+        <item name="android:gravity">left</item> <!-- Alineación del texto centrado -->
+        <item name="android:letterSpacing">0.1</item> <!-- Espaciado entre las letras -->
+    </style>
+    <!-- Estilo para la toolbar -->
+    <style name="ToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:titleTextColor">@color/naranja</item>
+    </style>
+
+
+    <!-- Estilo para los botones -->
+    <style name="BlueButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@color/azulMarino</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:textColor">@color/amarillo</item>
+    </style>
+
+    <!-- Estilo para el menú -->
+        <style name="MenuTextStyle">
+            <item name="android:textSize">80sp</item>
+            <item name="android:textColor">@color/azulMarino</item>
+        </style>
+
+</resources>

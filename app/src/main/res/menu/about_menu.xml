@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        El elemento <menu> define un menú en Android, que puede ser utilizado en la Toolbar o en otros elementos de la interfaz.
+        La etiqueta `menu` contiene elementos `item`, que definen las opciones disponibles en el menú.
+    -->
+
+    <item
+
+        android:id="@+id/nav_about_menu"
+        android:background="@color/primary_end"
+        android:icon="@drawable/mroja2"
+        app:showAsAction="always"
+        tools:ignore="MenuTitle" />
+
+</menu>
