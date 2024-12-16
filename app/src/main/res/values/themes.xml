@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Tema base con Splash Screen configurado -->
+    <!-- Tema base con Splash Screen configurado
+    En este caso no se incluye el ActionBar ya que vamos a usar la toolbar-->
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/teal_700</item>
         <item name="colorPrimaryDark">@color/primary_end</item>
@@ -8,7 +9,7 @@
         <item name="android:textColorPrimary">@color/amarillo</item>
 
 
-        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splashlogo2</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/logo</item>
         <item name="android:windowSplashScreenAnimationDuration">2500</item>
         <item name="android:windowSplashScreenIconBackgroundColor">@color/azulMarino</item>
         <item name="android:windowSplashScreenBackground">@color/azulMarino</item>

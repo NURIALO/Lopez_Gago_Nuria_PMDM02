@@ -35,4 +35,25 @@
             <item name="android:textColor">@color/azulMarino</item>
         </style>
 
+
+    <!-- Estilo para los items del menú Drawer -->
+    <style name="MenuTextStyleDrawer">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/azulMarino</item> <!-- Cambia el color según lo necesites -->
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+
+    <!-- Estilo para los ítems del menú -->
+    <style name="HomeMenuItemStyle">
+        <item name="android:textColor">@color/azulMarino</item> <!-- Cambia el color si es necesario -->
+        <item name="android:textStyle">bold</item> <!-- Cambiar a negrita para Home -->
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="SettingsMenuItemStyle">
+        <item name="android:textColor">@color/azulMarino</item> <!-- Cambia el color si es necesario -->
+        <item name="android:textStyle">bold</item> <!-- Cambiar a itálico para Settings -->
+        <item name="android:textSize">30sp</item>
+    </style>
 </resources>

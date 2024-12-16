@@ -5,13 +5,14 @@
     <item
         android:id="@+id/nav_home_menu"
         android:title="@string/home"
-        android:titleTextStyle="@style/MenuTextStyle"/>
+        android:titleTextStyle="@style/HomeMenuItemStyle"
+        />
 
     <!-- Ítem de menú para la configuración (comentado el ícono para este ítem) -->
     <item
         android:id="@+id/nav_settings_menu"
         android:title="@string/settings"
-        android:titleTextStyle="@style/MenuTextStyle"
+        android:titleTextStyle="@style/SettingsMenuItemStyle"
         />
 
 </menu>

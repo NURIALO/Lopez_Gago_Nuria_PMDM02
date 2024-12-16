@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- Imagen del personaje a la izquierda -->
+    <ImageView
+        android:id="@+id/image_character_detail"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:background="@drawable/cardview_gradient_background"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Contenedor de texto a la derecha -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Nombre del personaje -->
+            <TextView
+                android:id="@+id/name_text_detail"
+                style="@style/TextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/characterName"
+                android:textStyle="bold" />
+
+            <!-- Descripción del personaje -->
+            <TextView
+                android:id="@+id/description_text_detail"
+                style="@style/TextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/characterDescription" />
+
+            <!-- Habilidades del personaje -->
+            <TextView
+                android:id="@+id/abilities_text_detail"
+                style="@style/TextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/characterAbilities" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
